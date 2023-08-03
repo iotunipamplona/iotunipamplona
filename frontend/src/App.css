@@ -1,0 +1,32 @@
+.center {
+    text-align: center;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .temperature-section,
+  .humidity-section,
+  .co2-section,
+  .footer-image {
+    flex: 1 0 50%;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+  
+    .temperature-section,
+    .humidity-section,
+    .co2-section,
+    .footer-image {
+      flex: 1 0 100%;
+    }
+  }
