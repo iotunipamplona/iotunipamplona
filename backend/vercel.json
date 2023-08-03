@@ -1,15 +1,54 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "*.js",
+      "src": "./index.js",
       "use": "@vercel/node"
     }
   ],
-    "routes": [
-        {
-          "src": "/(.*)",
-          "dest": "/"
-        }
-      ]
+  "routes": [
+    {
+      "src": "/user(.*)",
+      "dest": "/user"
+    },
+    {
+      "src": "/temperaturai1(.*)",
+      "dest": "/temperaturai1"
+    },
+    {
+      "src": "/humedadi1(.*)",
+      "dest": "/humedadi1"
+    },
+    {
+      "src": "/co2i1(.*)",
+      "dest": "/co2i1"
+    },
+    {
+      "src": "/temperaturai2(.*)",
+      "dest": "/temperaturai2"
+    },
+    {
+      "src": "/humedadi2(.*)",
+      "dest": "/humedadi2"
+    },
+    {
+      "src": "/co2i2(.*)",
+      "dest": "/co2i2"
+    },
+    {
+      "src": "/temperaturai3(.*)",
+      "dest": "/temperaturai3"
+    },
+    {
+      "src": "/humedadi3(.*)",
+      "dest": "/humedadi3"
+    },
+    {
+      "src": "/co2i3(.*)",
+      "dest": "/co2i3"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
