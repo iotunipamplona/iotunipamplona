@@ -22,8 +22,7 @@ const co2i2Routes = require('./routes/co2i2');
 const temperaturai3Routes = require('./routes/temperaturai3');
 const humedadi3Routes = require('./routes/humedadi3');
 const co2i3Routes = require('./routes/co2i3');
-const userApiRoutes = require('./routes/api/user');
-const ticketApiRoutes = require('./routes/api/ticket');
+
 
 app.use('/user', userRoutes);
 app.use('/temperaturai1', temperaturai1Routes);
@@ -35,8 +34,7 @@ app.use('/co2i2', co2i2Routes);
 app.use('/temperaturai3', temperaturai3Routes);
 app.use('/humedadi3', humedadi3Routes);
 app.use('/co2i3', co2i3Routes);
-app.use('/api/users', userApiRoutes);
-app.use('/api/tickets', ticketApiRoutes);
+
 
 app.listen(PORT, () => {
     console.log(`Listening at ${PORT}`);
