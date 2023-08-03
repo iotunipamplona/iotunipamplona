@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const dbConnect = async () => {
+const dbconexion = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log("Connected to MONGODB Atlas");
@@ -9,4 +9,4 @@ const dbConnect = async () => {
   }
 };
 
-module.exports = dbConnect;
+module.exports = dbconexion;
