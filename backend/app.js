@@ -11,7 +11,7 @@ app.use(express.json());
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.send("Express on Vercel");
+  res.send("<h1>Bienvenido a la Aplicación Express en Vercel</h1>");
 });
 
 app.use("/api", require("./routes"));
@@ -21,4 +21,5 @@ app.listen(port, () => {
 });
 
 dbconexion();
+
 module.exports = app;
